@@ -13,7 +13,7 @@
       <AppBar titleText="Hovedmeny" BorderPane.alignment="CENTER">
       </AppBar>
    </top>
-   <left>
+   <center>
       <VBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="konkurransestatus" text="Konkurransestatus" />
@@ -26,5 +26,5 @@
             <Insets left="10.0" right="10.0" />
          </padding>
       </VBox>
-   </left>
+   </center>
 </View>
