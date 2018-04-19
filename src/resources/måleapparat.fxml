@@ -12,7 +12,7 @@
 
 <View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <AppBar titleText="Endre epost" BorderPane.alignment="CENTER">
+      <AppBar titleText="Måleapparat" BorderPane.alignment="CENTER">
       </AppBar>
    </top>
    <center>
@@ -21,16 +21,6 @@
          	<HBox prefHeight="0.0" prefWidth="315.0">
                <children>
                   <TextField fx:id="NyEpost" promptText="Ny e-post" />
-                  <Label text="*" textFill="#f20404">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox prefHeight="0.0" prefWidth="315.0">
-               <children>
-                  <TextField fx:id="BekreftEpost" promptText="Bekreft e-post" />
                   <Label text="*" textFill="#f20404">
                      <font>
                         <Font size="15.0" />
