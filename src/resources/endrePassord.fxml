@@ -5,21 +5,23 @@
 <?import com.gluonhq.charm.glisten.mvc.View?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <AppBar titleText="Endre epost" BorderPane.alignment="CENTER">
+      <AppBar titleText="Endre passord" BorderPane.alignment="CENTER">
       </AppBar>
    </top>
    <center>
    		<VBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-         	<HBox prefHeight="0.0" prefWidth="315.0">
+            <HBox prefHeight="0.0" prefWidth="315.0">
                <children>
-                  <TextField fx:id="NyEpost" promptText="Ny e-post" />
+                  <TextField fx:id="GammeltPassord" promptText="Gammelt passord" />
                   <Label text="*" textFill="#f20404">
                      <font>
                         <Font size="15.0" />
@@ -29,7 +31,17 @@
             </HBox>
             <HBox prefHeight="0.0" prefWidth="315.0">
                <children>
-                  <TextField fx:id="BekreftEpost" promptText="Bekreft e-post" />
+                  <TextField fx:id="NyttPassord" promptText="Nytt passord" />
+                  <Label text="*" textFill="#f20404">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="315.0">
+               <children>
+                  <TextField fx:id="BekreftPassord" promptText="Bekreft passord" />
                   <Label text="*" textFill="#f20404">
                      <font>
                         <Font size="15.0" />
