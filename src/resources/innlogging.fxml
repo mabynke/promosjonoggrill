@@ -4,26 +4,26 @@
 <?import com.gluonhq.charm.glisten.mvc.View?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0"
-      fx:controller="promosjonoggrill.application.view.InnloggingKontoller" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="promosjonoggrill.application.view.InnloggingKontoller">
    <top>
-      <!--  -->
+      <AppBar titleText="Innlogging" BorderPane.alignment="CENTER"> <!-- Fungerer ikke uten denne, tydeligvis (SceneBuilder vil ikke åpne) -->
+      </AppBar>
    </top>
-   <left>
+   <center>
       <VBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="konkurransestatus" text="Konkurransestatus" />
-            <Button fx:id="Konkurranser" text="Konkurranser" />
-            <Button fx:id="minProfil" text="Min profil" />
-            <Button fx:id="lagstyring" text="Lagstyring" />
-            <Button fx:id="loggUt" text="Logg ut" />
+            <TextField promptText="Brukernavn" />
+            <TextField promptText="Passord" />
+            <Button fx:id="loggInn" text="Logg inn" />
+            <Button fx:id="registrerNyBruker" text="Registrer ny bruker" />
          </children>
          <padding>
             <Insets left="10.0" right="10.0" />
          </padding>
       </VBox>
-   </left>
+   </center>
 </View>
