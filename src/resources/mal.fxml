@@ -12,17 +12,21 @@
 <View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <AppBar titleText="Screen Title" BorderPane.alignment="CENTER">
+      	<!--
          <navIcon>
             <Button>
                <graphic>
-                  <Icon content="ARROW_BACK" />
+                  <Icon content="EMPTY" />
                </graphic>
             </Button>
          </navIcon>
+         -->
+         <!--
          <menuItems>
             <MenuItem text="Menu Item 1" />
             <MenuItem text="Menu Item 2" />
          </menuItems>
+         -->
       </AppBar>
    </top>
    <center>
