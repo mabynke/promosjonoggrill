@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.AppBar?>
-<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<View maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <AppBar titleText="Måleapparat" BorderPane.alignment="CENTER">
-      </AppBar>
+      <GridPane>
+         <columnConstraints>
+           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+          <children>
+             <Label text="Måleapparat">
+                <font>
+                   <Font size="20.0" />
+                </font>
+             </Label>
+             <!-- 
+             <Button fx:id="meny" mnemonicParsing="false" text="Meny" GridPane.columnIndex="1" />
+              -->
+          </children>
+       </GridPane>
    </top>
    <center>
    		<VBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
@@ -21,8 +42,8 @@
          	<HBox prefHeight="0.0" prefWidth="315.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="Lagre" text="Lagre" />
-                  <Button fx:id="Avbryt" text="Avbryt">
+                  <Button fx:id="kobleTil" text="Koble til" />
+                  <Button fx:id="avbryt" text="Avbryt">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
@@ -38,4 +59,4 @@
          </padding>
       </VBox>
    </center>
-</View>
+</BorderPane>
