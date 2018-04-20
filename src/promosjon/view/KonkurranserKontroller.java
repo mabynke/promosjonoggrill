@@ -32,11 +32,16 @@ public class KonkurranserKontroller {
 	   	}
 	   	listView.setItems(konkurranser);
 	}
+	
 	private Stage stage;
+	
+	public void settStage(Stage stage) {
+		this.stage = stage;
+	}
 	
 	@FXML public void handleMouseClick(MouseEvent arg0) {
 		Info.valgtKonkurranse = listView.getSelectionModel().getSelectedItem();
-		visKonkurranse();
+		visKonkurranseDetaljer();
 	}
 	
 	@FXML
@@ -44,7 +49,7 @@ public class KonkurranserKontroller {
 		stage.close();
 	}
 	
-	public void visKonkurranse() {
+	public void visKonkurranseDetaljer() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("view/konkurransedetaljer.fxml"));
@@ -55,7 +60,7 @@ public class KonkurranserKontroller {
             dialogStage.initOwner(stage);
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
-            KonkurranseKontroller controller = loader.getController();
+            KonkurranseDetaljerKontroller controller = loader.getController();
             controller.settStage(dialogStage);;
             dialogStage.showAndWait();
         }
