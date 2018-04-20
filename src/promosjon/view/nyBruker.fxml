@@ -14,7 +14,8 @@
 <?import javafx.scene.control.TextField?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+		fx:controller="promosjon.view.RegistrerBrukerKontroller">
    <top>
       <GridPane>
          <columnConstraints>
@@ -39,10 +40,10 @@
    <center>
    		<VBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-         	<TextField fx:id="brukernavn" promptText="Brukernavn" />
+         	<TextField fx:id="brukernavnFelt" promptText="Brukernavn" />
             <HBox prefHeight="0.0" prefWidth="315.0">
                <children>
-                  <TextField fx:id="navn" promptText="Navn" />
+                  <TextField fx:id="navnFelt" promptText="Navn" />
                   <Label text="*" textFill="#f20404">
                      <font>
                         <Font size="15.0" />
@@ -52,7 +53,7 @@
             </HBox>
             <HBox prefHeight="0.0" prefWidth="315.0">
                <children>
-                  <TextField fx:id="epost" promptText="E-post" />
+                  <TextField fx:id="epostFelt" promptText="E-post" />
                   <Label text="*" textFill="#f20404">
                      <font>
                         <Font size="15.0" />
@@ -62,7 +63,7 @@
             </HBox>
             <HBox prefHeight="0.0" prefWidth="315.0">
                <children>
-                  <TextField fx:id="passord" promptText="Passord" />
+                  <TextField fx:id="passordFelt" promptText="Passord" />
                   <Label text="*" textFill="#f20404">
                      <font>
                         <Font size="15.0" />
@@ -72,7 +73,7 @@
             </HBox>
             <HBox prefHeight="0.0" prefWidth="315.0">
                <children>
-                  <TextField fx:id="gjentaPassord" promptText="Gjenta passord" />
+                  <TextField fx:id="gjentaPassordFelt" promptText="Gjenta passord" />
                   <Label text="*" textFill="#f20404">
                      <font>
                         <Font size="15.0" />
@@ -82,8 +83,8 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="avbryt" text="Avbryt" />
-                  <Button fx:id="registrer" text="Registrer">
+                  <Button text="Avbryt" onAction="#klikkAvbryt"/>
+                  <Button fx:id="registrerKnapp" text="Registrer" onAction="#klikkRegistrer">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>

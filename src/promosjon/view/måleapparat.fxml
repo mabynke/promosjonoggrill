@@ -13,7 +13,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+		fx:controller="promosjon.view.MaaleapparatKontroller">
    <top>
       <GridPane>
          <columnConstraints>
@@ -38,12 +39,12 @@
    <center>
    		<VBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <ListView fx:id="Liste" prefHeight="200.0" prefWidth="200.0" />
+            <ListView fx:id="list" prefHeight="200.0" prefWidth="200.0" />
          	<HBox prefHeight="0.0" prefWidth="315.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="kobleTil" text="Koble til" />
-                  <Button fx:id="avbryt" text="Avbryt">
+                  <Button fx:id="kobleTilKnapp" text="Koble til" onAction="#klikkKobleTil"/>
+                  <Button fx:id="avbrytKnapp" text="Avbryt" onAction="#klikkAvbryt">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>

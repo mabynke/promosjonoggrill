@@ -151,7 +151,8 @@ public class HovedmenyKontroller {
             e.printStackTrace();
         }
     }
-public void visNyttLag() {
+    
+    public void visNyttLag() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("view/nyttlag.fxml"));

@@ -14,7 +14,8 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="promosjon.view.MinProfilKontroller">
    <center>
       <VBox prefHeight="445.0" prefWidth="335.0" BorderPane.alignment="CENTER">
          <children>
@@ -26,42 +27,42 @@
          <children>
             <HBox prefHeight="36.0" prefWidth="315.0" spacing="10.0">
                <children>
-                  <Label fx:id="navn" prefHeight="27.0" prefWidth="100.0" text="Navn Navnesen " />
-                  <Button fx:id="endrenavn" mnemonicParsing="false" text="Endre" />
+                  <Label fx:id="navnLapp" prefHeight="27.0" prefWidth="100.0" text="Navn Navnesen " />
+                  <Button fx:id="endreNavnKnapp" onAction="#klikkEndreNavn" mnemonicParsing="false" text="Endre" />
                </children>
             </HBox>
             <HBox prefHeight="29.0" prefWidth="315.0" spacing="10.0">
                <children>
-                  <Label fx:id="brukernavn" prefHeight="36.0" prefWidth="110.0" text="Brukernavn" />
+                  <Label fx:id="brukernavnLapp" prefHeight="36.0" prefWidth="110.0" text="Brukernavn" />
                </children>
             </HBox>
             <HBox prefHeight="40.0" prefWidth="315.0" spacing="10.0">
                <children>
-                  <Label fx:id="epost" prefHeight="27.0" prefWidth="112.0" text="epost@epost.no" />
-                  <Button fx:id="endreepost" mnemonicParsing="false" text="Endre " />
+                  <Label fx:id="epostLapp" prefHeight="27.0" prefWidth="112.0" text="epost@epost.no" />
+                  <Button fx:id="endreEpostKnapp" onAction="#klikkEndreEpost" mnemonicParsing="false" text="Endre " />
                </children>
             </HBox>
-            <Button fx:id="endrepassord" mnemonicParsing="false" text="Endre passord " />
-            <Button fx:id="måleapparat" mnemonicParsing="false" text="Måleapparater " />
+            <Button fx:id="endrePassordKnapp" onAction="#klikkEndrePassord" mnemonicParsing="false" text="Endre passord " />
+            <Button fx:id="maaleapparaterKnapp" onAction="#klikkMaaleapparater" mnemonicParsing="false" text="Måleapparater " />
             <HBox prefHeight="37.0" prefWidth="315.0" spacing="10.0">
                <children>
                   <Circle fill="#e4e129" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label fx:id="antallgull" prefHeight="35.0" prefWidth="45.0" text="x 3" />
+                  <Label prefHeight="35.0" prefWidth="45.0" text="x 3" />
                </children>
             </HBox>
             <HBox prefHeight="35.0" prefWidth="315.0" spacing="10.0">
                <children>
                   <Circle fill="#a2a5a8" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label fx:id="antallsølv" prefHeight="32.0" prefWidth="39.0" text="x 1" />
+                  <Label prefHeight="32.0" prefWidth="39.0" text="x 1" />
                </children>
             </HBox>
             <HBox prefHeight="174.0" prefWidth="315.0" spacing="10.0">
                <children>
                   <Circle fill="#b5891a" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label fx:id="antallbronse" prefHeight="33.0" prefWidth="38.0" text="x 8" />
+                  <Label prefHeight="33.0" prefWidth="38.0" text="x 8" />
                </children>
             </HBox>
-            <Button fx:id="slettebruker" mnemonicParsing="false" text="Slette bruker" />
+            <Button fx:id="slettBrukerKnapp" onAction="#klikkSlettBruker" mnemonicParsing="false" text="Slette bruker" />
          </children>
          <padding>
             <Insets left="10.0" right="10.0" />
@@ -83,11 +84,11 @@
                   <Font size="20.0" />
                </font>
             </Label>
-			<Button fx:id="meny" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
+			<Button onAction="#klikkHjem" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
             		<graphic>
         				<ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
         				  <image>
-          				  <Image url="@littlehouse_icon.jpg" />
+          				  <Image url="@../../resources/littlehouse_icon.jpg" />
         				  </image>
        				 </ImageView>
       			</graphic>

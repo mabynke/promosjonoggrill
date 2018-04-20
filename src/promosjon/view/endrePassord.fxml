@@ -13,7 +13,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="promosjon.view.EndrePassordKontroller">
    <top>
       <GridPane>
          <columnConstraints>
@@ -40,7 +41,7 @@
          <children>
             <HBox prefHeight="0.0" prefWidth="315.0">
                <children>
-                  <TextField fx:id="GammeltPassord" promptText="Gammelt passord" />
+                  <TextField fx:id="gammeltPassordFelt" promptText="Gammelt passord" />
                   <Label text="*" textFill="#f20404">
                      <font>
                         <Font size="15.0" />
@@ -50,7 +51,7 @@
             </HBox>
             <HBox prefHeight="0.0" prefWidth="315.0">
                <children>
-                  <TextField fx:id="NyttPassord" promptText="Nytt passord" />
+                  <TextField fx:id="nyttPassordFelt" promptText="Nytt passord" />
                   <Label text="*" textFill="#f20404">
                      <font>
                         <Font size="15.0" />
@@ -60,7 +61,7 @@
             </HBox>
             <HBox prefHeight="0.0" prefWidth="315.0">
                <children>
-                  <TextField fx:id="BekreftPassord" promptText="Bekreft passord" />
+                  <TextField fx:id="gjentaPassordFelt" promptText="Bekreft passord" />
                   <Label text="*" textFill="#f20404">
                      <font>
                         <Font size="15.0" />
@@ -70,8 +71,8 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="Lagre" text="Lagre" />
-                  <Button fx:id="Avbryt" text="Avbryt">
+                  <Button fx:id="lagreKnapp" onAction="#klikkLagret" text="Lagre" />
+                  <Button fx:id="avbrytKnapp" onAction="#klikkAvbryt" text="Avbryt">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>

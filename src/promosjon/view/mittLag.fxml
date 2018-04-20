@@ -51,7 +51,7 @@
             		<graphic>
         				<ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
         				  <image>
-          				  <Image url="@littlehouse_icon.jpg" />
+          				  <Image url="@../../resources/littlehouse_icon.jpg" />
         				  </image>
        				 </ImageView>
       			</graphic>
