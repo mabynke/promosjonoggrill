@@ -13,19 +13,20 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="promosjonoggrill.application.view.MittLagKontoller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="promosjon.view.MittLagKontroller">
    <center>
       <VBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="lagnavn" text="Lagnavn" />
+            <Label fx:id="lagnavnLapp" text="Lagnavn" />
             <Label text="Medlemmer:" />
-            <ListView fx:id="lagliste" prefHeight="200.0" prefWidth="200.0" />
-            <Button fx:id="fjernMedlem" text="Fjern medlem" />
-            <Button fx:id="leggTilMedlem" text="Legg til medlem">
+            <ListView fx:id="medlemmer" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="fjernMedlemKnapp" onAction="#klikkFjernMedlem" text="Fjern medlem" />
+            <Button fx:id="leggTilMedlemKnapp" onAction="#klikkLeggTilMedlem" text="Legg til medlem">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin></Button>
-            <Button fx:id="slettLag" text="Slett lag" />
+            <Button fx:id="slettLagKnapp" onAction="#klikkSlettLag" text="Slett lag" />
          </children>
          <padding>
             <Insets left="10.0" right="10.0" />
@@ -47,7 +48,7 @@
                    <Font size="20.0" />
                 </font>
              </Label>
-             <Button fx:id="meny" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
+             <Button onAction="#klikkHjem" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
             		<graphic>
         				<ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
         				  <image>
