@@ -14,7 +14,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+		fx:controller="promosjon.view.NyttLagKontroller">
    <center>
       <VBox prefHeight="445.0" prefWidth="335.0" BorderPane.alignment="CENTER">
          <children>
@@ -25,11 +26,11 @@
    <center>
       <VBox alignment="CENTER_LEFT" prefHeight="356.0" prefWidth="335.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="lagnavn" prefHeight="27.0" prefWidth="114.0" promptText="Lagnavn" />
+            <TextField fx:id="lagNavnFelt" prefHeight="27.0" prefWidth="114.0" promptText="Lagnavn" />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                <children>
-                  <Button fx:id="lagreid" text="OK" />
-                  <Button fx:id="avbryt" mnemonicParsing="false" text="Avbryt" />
+                  <Button fx:id="okKnapp" text="OK" onAction="#klikkLagret"/>
+                  <Button fx:id="avbrytKnapp" mnemonicParsing="false" text="Avbryt" onAction="#klikkAvbryt"/>
                </children>
             </HBox>
          </children>
@@ -53,7 +54,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button fx:id="meny" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
+            <Button fx:id="hjemKnapp" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
             		<graphic>
         				<ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
         				  <image>
