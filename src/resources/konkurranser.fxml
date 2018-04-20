@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <center>
@@ -26,7 +27,11 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label prefHeight="17.0" prefWidth="140.0" text="Konkurranser" />
+            <Label prefHeight="17.0" prefWidth="140.0" text="Konkurranser">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
             <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Hjem" GridPane.columnIndex="1" />
          </children>
       </GridPane>
