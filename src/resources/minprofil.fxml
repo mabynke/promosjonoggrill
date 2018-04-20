@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -81,8 +83,16 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button fx:id="hjem" mnemonicParsing="false" prefHeight="27.0" prefWidth="74.0" text="Hjem" GridPane.columnIndex="1" />
-         </children>
+			<Button fx:id="meny" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
+            		<graphic>
+        				<ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+        				  <image>
+          				  <Image url="@littlehouse_icon.jpg" />
+        				  </image>
+       				 </ImageView>
+      			</graphic>
+      		</Button>         
+      	</children>
       </GridPane>
    </top>
 </BorderPane>
