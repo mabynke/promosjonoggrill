@@ -8,8 +8,10 @@ public class Info {
 	public static ArrayList<String> navn = new ArrayList<String>();
 	public static ArrayList<String> epost = new ArrayList<String>();
 	public static ArrayList<String> passord = new ArrayList<String>();
+	public static ArrayList<String> paameldt = new ArrayList<String>();
 	
 	public static ArrayList<String> konkurranser = new ArrayList<String>();
+	public static ArrayList<ArrayList<String>> konkurranseInformasjon = new ArrayList<ArrayList<String>>();
 	
 	public static ArrayList<String> maaleapparater = new ArrayList<String>();
 	public static ArrayList<Boolean> tilkobledeMaaleapparater = new ArrayList<Boolean>();
@@ -67,6 +69,12 @@ public class Info {
 		passord.remove(index);
 		epost.remove(index);
 		bruker = null;
+	}
+	
+	public static void slettLag() {
+		int index = lagListe.indexOf(brukersLag());
+		lagListe.remove(index);
+		lagNavn.remove(index);
 	}
 	
 	public static String hentPassord() {

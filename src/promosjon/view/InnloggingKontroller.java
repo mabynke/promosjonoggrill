@@ -107,7 +107,7 @@ public class InnloggingKontroller {
 		}
 	}
 
-	public boolean visKonkurransestatus() {
+	public void visKonkurransestatus() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("view/konkurransestatus.fxml"));
@@ -121,11 +121,9 @@ public class InnloggingKontroller {
 			RegistrerBrukerKontroller controller = loader.getController();
 			controller.settStage(dialogStage);;
 			dialogStage.showAndWait();
-			return controller.erHjemKlikket();
 		}
 		catch (IOException e) {
 			e.printStackTrace();
-			return false;
 		}
 	}
 

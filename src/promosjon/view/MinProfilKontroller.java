@@ -39,6 +39,9 @@ public class MinProfilKontroller {
 	@FXML
 	private Button slettBrukerKnapp;
 	
+	@FXML
+	private Button hjem;
+	
 	private Main main;
 	
 	public void settMain(Main main) {
