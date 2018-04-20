@@ -68,7 +68,7 @@ public class InnloggingKontroller {
 	public boolean visRegistrerBruker() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("view/registrerbruker.fxml"));
+			loader.setLocation(Main.class.getResource("view/nyBruker.fxml"));
 			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
@@ -110,7 +110,7 @@ public class InnloggingKontroller {
 	public void visKonkurransestatus() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("view/konkurransestatus.fxml"));
+			loader.setLocation(Main.class.getResource("view/status.fxml"));
 			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
