@@ -59,7 +59,7 @@ public class HovedmenyKontroller {
     @FXML
     private void klikkLagstyring() {
         if (Info.erPaaLag()) {
-            visMittLag(Info.brukersLag());
+            visMittLag();
         }
         else {
             visNyttLag();
