@@ -17,7 +17,8 @@
       <VBox prefHeight="445.0" prefWidth="335.0" BorderPane.alignment="CENTER">
          <children>
             <ListView prefHeight="517.0" prefWidth="335.0" />
-         </children></VBox>
+         </children>
+      </VBox>
    </center>
    <center>
       <VBox alignment="CENTER_LEFT" prefHeight="356.0" prefWidth="335.0" spacing="10.0" BorderPane.alignment="CENTER">
