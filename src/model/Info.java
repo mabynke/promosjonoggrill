@@ -21,6 +21,7 @@ public class Info {
 	
 	public static String bruker = null;
 	public static String konkurranse = null;
+	public static String valgtKonkurranse;
 	
 	public static boolean erPaaLag() {
 		for (ArrayList<String> lag : lagListe) {
