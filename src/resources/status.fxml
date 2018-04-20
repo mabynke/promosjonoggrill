@@ -70,7 +70,15 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button fx:id="meny" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" text="Hjem" GridPane.columnIndex="1" />
+            <Button fx:id="meny" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
+            		<graphic>
+        				<ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+        				  <image>
+          				  <Image url="@littlehouse_icon.jpg" />
+        				  </image>
+       				 </ImageView>
+      			</graphic>
+      		</Button>
          </children>
       </GridPane>
    </top>
