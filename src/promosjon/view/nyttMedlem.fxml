@@ -43,7 +43,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label prefHeight="17.0" prefWidth="153.0" text="Legg til nytt medlem">
+            <Label text="Legg til nytt medlem">
                <font>
                   <Font size="20.0" />
                </font>
