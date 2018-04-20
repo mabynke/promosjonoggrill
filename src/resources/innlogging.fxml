@@ -31,7 +31,7 @@
                    <Font size="20.0" />
                 </font>
              </Label>
-             <Button mnemonicParsing="false" text="Meny" GridPane.columnIndex="1" />
+             <Button fx:id="meny" mnemonicParsing="false" text="Meny" GridPane.columnIndex="1" />
               -->
           </children>
        </GridPane>
