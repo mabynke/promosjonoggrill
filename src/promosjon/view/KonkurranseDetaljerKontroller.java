@@ -27,6 +27,10 @@ public class KonkurranseDetaljerKontroller {
 	
 	private Stage stage;
 	
+	public void settStage(Stage stage) {
+		this.stage = stage;
+	}
+	
 	@FXML
 	private void initialize() {
 		int index = Info.konkurranser.indexOf(Info.valgtKonkurranse);
