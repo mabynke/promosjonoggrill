@@ -24,42 +24,42 @@
          <children>
             <HBox prefHeight="36.0" prefWidth="315.0" spacing="10.0">
                <children>
-                  <Label prefHeight="27.0" prefWidth="100.0" text="Navn Navnesen " />
-                  <Button mnemonicParsing="false" text="Endre" />
+                  <Label fx:id="navn" prefHeight="27.0" prefWidth="100.0" text="Navn Navnesen " />
+                  <Button fx:id="endrenavn" mnemonicParsing="false" text="Endre" />
                </children>
             </HBox>
             <HBox prefHeight="29.0" prefWidth="315.0" spacing="10.0">
                <children>
-                  <Label prefHeight="36.0" prefWidth="110.0" text="Brukernavn" />
+                  <Label fx:id="brukernavn" prefHeight="36.0" prefWidth="110.0" text="Brukernavn" />
                </children>
             </HBox>
             <HBox prefHeight="40.0" prefWidth="315.0" spacing="10.0">
                <children>
-                  <Label prefHeight="27.0" prefWidth="112.0" text="epost@epost.no" />
-                  <Button mnemonicParsing="false" text="Endre " />
+                  <Label fx:id="epost" prefHeight="27.0" prefWidth="112.0" text="epost@epost.no" />
+                  <Button fx:id="endreepost" mnemonicParsing="false" text="Endre " />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" text="Endre passord " />
-            <Button mnemonicParsing="false" text="Måleapparater " />
+            <Button fx:id="endrepassord" mnemonicParsing="false" text="Endre passord " />
+            <Button fx:id="måleapparat" mnemonicParsing="false" text="Måleapparater " />
             <HBox prefHeight="37.0" prefWidth="315.0" spacing="10.0">
                <children>
                   <Circle fill="#e4e129" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label prefHeight="35.0" prefWidth="45.0" text="x 3" />
+                  <Label fx:id="antallgull" prefHeight="35.0" prefWidth="45.0" text="x 3" />
                </children>
             </HBox>
             <HBox prefHeight="35.0" prefWidth="315.0" spacing="10.0">
                <children>
                   <Circle fill="#a2a5a8" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label prefHeight="32.0" prefWidth="39.0" text="x 1" />
+                  <Label fx:id="antallsølv" prefHeight="32.0" prefWidth="39.0" text="x 1" />
                </children>
             </HBox>
             <HBox prefHeight="174.0" prefWidth="315.0" spacing="10.0">
                <children>
                   <Circle fill="#b5891a" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label prefHeight="33.0" prefWidth="38.0" text="x 8" />
+                  <Label fx:id="antallbronse" prefHeight="33.0" prefWidth="38.0" text="x 8" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" text="Slette bruker" />
+            <Button fx:id="slettebruker" mnemonicParsing="false" text="Slette bruker" />
          </children>
          <padding>
             <Insets left="10.0" right="10.0" />
