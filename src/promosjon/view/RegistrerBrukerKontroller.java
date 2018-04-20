@@ -1,6 +1,6 @@
-package application.view;
+package promosjon.view;
 
-import application.model.Info;
+import model.Info;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;

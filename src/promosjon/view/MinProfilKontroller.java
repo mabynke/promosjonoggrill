@@ -1,15 +1,14 @@
-package application.view;
+package promosjon.view;
 
 import java.io.IOException;
 
-import application.Main;
-import application.model.Info;
+import promosjon.Main;
+import model.Info;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -161,7 +160,7 @@ public class MinProfilKontroller {
 			dialogStage.initOwner(stage);
 			Scene scene = new Scene(page);
 			dialogStage.setScene(scene);
-			MaaleapparaterKontroller controller = loader.getController();
+			MaaleapparatKontroller controller = loader.getController();
 			controller.settStage(dialogStage);;
 			dialogStage.showAndWait();
 		}

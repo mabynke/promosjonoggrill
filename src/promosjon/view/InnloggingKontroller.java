@@ -1,9 +1,9 @@
-package application.view;
+package promosjon.view;
 
 import java.io.IOException;
 
-import application.Main;
-import application.model.Info;
+import promosjon.Main;
+import model.Info;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
