@@ -1,9 +1,9 @@
-package promosjon.view;
+package application.view;
 
 import java.io.IOException;
 
-import promosjon.Main;
-import model.Info;
+import application.Main;
+import application.model.Info;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -107,7 +107,7 @@ public class InnloggingKontroller {
 		}
 	}
 
-	public void visKonkurransestatus() {
+	public boolean visKonkurransestatus() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("view/konkurransestatus.fxml"));
@@ -121,9 +121,11 @@ public class InnloggingKontroller {
 			RegistrerBrukerKontroller controller = loader.getController();
 			controller.settStage(dialogStage);;
 			dialogStage.showAndWait();
+			return controller.erHjemKlikket();
 		}
 		catch (IOException e) {
 			e.printStackTrace();
+			return false;
 		}
 	}
 
