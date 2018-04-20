@@ -8,7 +8,6 @@ public class Info {
 	public static ArrayList<String> navn = new ArrayList<String>();
 	public static ArrayList<String> epost = new ArrayList<String>();
 	public static ArrayList<String> passord = new ArrayList<String>();
-	public static ArrayList<String> paameldt = new ArrayList<String>();
 	
 	public static ArrayList<String> konkurranser = new ArrayList<String>();
 	public static ArrayList<ArrayList<String>> konkurranseInformasjon = new ArrayList<ArrayList<String>>();
@@ -18,6 +17,8 @@ public class Info {
 	
 	public static ArrayList<String> lagNavn = new ArrayList<String>();
 	public static ArrayList<ArrayList<String>> lagListe = new ArrayList<ArrayList<String>>();
+	
+	public static String valgtKonkurranse = null;
 	
 	public static String bruker = null;
 	public static String konkurranse = null;
