@@ -75,7 +75,7 @@ public class HovedmenyKontroller {
     public void visKonkurransestatus() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("view/konkurransestatus.fxml"));
+			loader.setLocation(Main.class.getResource("view/status.fxml"));
             BorderPane page = (BorderPane) loader.load();
             
             Stage dialogStage = new Stage();
@@ -115,7 +115,7 @@ public class HovedmenyKontroller {
     public void visMinProfil() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("view/minprofil.fxml"));
+            loader.setLocation(Main.class.getResource("view/minProfil.fxml"));
             BorderPane page = (BorderPane) loader.load();
             
             Stage dialogStage = new Stage();
@@ -135,7 +135,7 @@ public class HovedmenyKontroller {
     public void visMittLag() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("view/mittlag.fxml"));
+            loader.setLocation(Main.class.getResource("view/mittLag.fxml"));
             BorderPane page = (BorderPane) loader.load();
             
             Stage dialogStage = new Stage();
@@ -155,7 +155,7 @@ public class HovedmenyKontroller {
     public void visNyttLag() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("view/nyttlag.fxml"));
+            loader.setLocation(Main.class.getResource("view/nyttLag.fxml"));
             BorderPane page = (BorderPane) loader.load();
             
             Stage dialogStage = new Stage();

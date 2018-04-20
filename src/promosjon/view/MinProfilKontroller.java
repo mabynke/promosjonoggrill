@@ -115,7 +115,7 @@ public class MinProfilKontroller {
 	public void visEndreEpost() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("view/endreepost.fxml"));
+			loader.setLocation(Main.class.getResource("view/endreEpost.fxml"));
 			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
@@ -135,7 +135,7 @@ public class MinProfilKontroller {
 	public void visEndrePassord() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("view/endrepassord.fxml"));
+			loader.setLocation(Main.class.getResource("view/endrePassord.fxml"));
 			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
@@ -155,7 +155,7 @@ public class MinProfilKontroller {
 	public void visMaaleapparater() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("view/maaleapparater.fxml"));
+			loader.setLocation(Main.class.getResource("view/måleapparat.fxml"));
 			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
