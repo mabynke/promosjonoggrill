@@ -12,7 +12,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="promosjon.view.KonkurranserKontroller">
    <center>
       <VBox prefHeight="445.0" prefWidth="335.0" BorderPane.alignment="CENTER">
          <children>
@@ -34,7 +35,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button fx:id="meny" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
+            <Button fx:id="hjemKnapp" onAction="#klikkHjem" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
             		<graphic>
         				<ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
         				  <image>
