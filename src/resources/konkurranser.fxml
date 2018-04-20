@@ -32,7 +32,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Hjem" GridPane.columnIndex="1" />
+            <Button fx:id="meny" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Hjem" GridPane.columnIndex="1" />
          </children>
       </GridPane>
    </top>
