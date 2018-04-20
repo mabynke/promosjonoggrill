@@ -82,7 +82,7 @@ public class MittLagKontroller {
 	public void visLeggTilMedlem() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("view/leggtilmedlem.fxml"));
+			loader.setLocation(Main.class.getResource("view/nyttMedlem.fxml"));
 			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
