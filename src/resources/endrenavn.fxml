@@ -22,11 +22,11 @@
    <center>
       <VBox alignment="CENTER_LEFT" prefHeight="552.0" prefWidth="335.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField prefHeight="27.0" prefWidth="114.0" promptText="Endre navn" />
+            <TextField fx:id="endrenavn" prefHeight="27.0" prefWidth="114.0" promptText="Endre navn" />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                <children>
                   <Button fx:id="lagreid" text="Lagre" />
-                  <Button mnemonicParsing="false" text="Avbryt" />
+                  <Button fx:id="avbryt" mnemonicParsing="false" text="Avbryt" />
                </children>
             </HBox>
          </children>

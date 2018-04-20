@@ -81,7 +81,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="74.0" text="Hjem" GridPane.columnIndex="1" />
+            <Button fx:id="hjem" mnemonicParsing="false" prefHeight="27.0" prefWidth="74.0" text="Hjem" GridPane.columnIndex="1" />
          </children>
       </GridPane>
    </top>
