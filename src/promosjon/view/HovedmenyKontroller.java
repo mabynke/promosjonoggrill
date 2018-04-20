@@ -1,7 +1,6 @@
 package promosjon.view;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import promosjon.Main;
 import model.Info;
