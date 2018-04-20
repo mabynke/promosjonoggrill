@@ -12,7 +12,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="promosjon.view.EndreNavnKontroller">
    <center>
       <VBox prefHeight="445.0" prefWidth="335.0" BorderPane.alignment="CENTER">
          <children>
@@ -22,11 +23,11 @@
    <center>
       <VBox alignment="CENTER_LEFT" prefHeight="552.0" prefWidth="335.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="endrenavn" prefHeight="27.0" prefWidth="114.0" promptText="Endre navn" />
+            <TextField fx:id="nyttNavnFelt" prefHeight="27.0" prefWidth="114.0" promptText="Endre navn" />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                <children>
-                  <Button fx:id="lagreid" text="Lagre" />
-                  <Button fx:id="avbryt" mnemonicParsing="false" text="Avbryt" />
+                  <Button fx:id="lagreKnapp" onAction="#klikkLagret" text="Lagre" />
+                  <Button fx:id="avbrytKnapp" onAction="#klikkAvbryt" text="Avbryt" />
                </children>
             </HBox>
          </children>
