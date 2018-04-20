@@ -11,7 +11,8 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="promosjonoggrill.application.view.InnloggingKontoller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="promosjon.view.InnloggingKontroller">
 
    <top>
       <GridPane>
@@ -45,13 +46,13 @@
                   <Insets bottom="40.0" />
                </VBox.margin>
             </ImageView>
-            <TextField promptText="Brukernavn" />
-            <TextField promptText="Passord" />
-            <Button fx:id="loggInn" text="Logg inn">
+            <TextField fx:id="brukernavnFelt" promptText="Brukernavn" />
+            <TextField fx:id="passordFelt" promptText="Passord" />
+            <Button fx:id="loggInnKnapp" onAction="#klikkLoggInn" text="Logg inn">
                <VBox.margin>
                   <Insets bottom="20.0" />
                </VBox.margin></Button>
-            <Button fx:id="registrerNyBruker" text="Registrer ny bruker" />
+            <Button fx:id="registrerBrukerKnapp" onAction="#klikkRegistrerBruker" text="Registrer ny bruker" />
          </children>
          <padding>
             <Insets left="10.0" right="10.0" />
