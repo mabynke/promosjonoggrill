@@ -9,7 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -69,7 +69,7 @@ public class InnloggingKontroller {
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("view/registrerbruker.fxml"));
-			AnchorPane page = (AnchorPane) loader.load();
+			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
 			dialogStage.initModality(Modality.WINDOW_MODAL);
@@ -91,7 +91,7 @@ public class InnloggingKontroller {
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("view/hovedmeny.fxml"));
-			AnchorPane page = (AnchorPane) loader.load();
+			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
 			dialogStage.initModality(Modality.WINDOW_MODAL);
@@ -111,7 +111,7 @@ public class InnloggingKontroller {
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("view/konkurransestatus.fxml"));
-			AnchorPane page = (AnchorPane) loader.load();
+			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
 			dialogStage.initModality(Modality.WINDOW_MODAL);

@@ -2,14 +2,13 @@ package promosjon;
 	
 import java.io.IOException;
 
-import application.Main;
-import application.view.InnloggingKontroller;
+import promosjon.view.InnloggingKontroller;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.BorderPane;
 
 public class Main extends Application {
@@ -37,7 +36,7 @@ public class Main extends Application {
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("view/innlogging.fxml"));
-			AnchorPane page = (AnchorPane) loader.load();
+			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
 			dialogStage.initModality(Modality.WINDOW_MODAL);
