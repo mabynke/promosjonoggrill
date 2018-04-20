@@ -16,7 +16,7 @@
    <center>
       <VBox prefHeight="445.0" prefWidth="335.0" BorderPane.alignment="CENTER">
          <children>
-            <ListView prefHeight="517.0" prefWidth="335.0" />
+            <ListView fx:id="listView" prefHeight="517.0" prefWidth="335.0" onMouseClicked="#handleMouseClick"/>
          </children></VBox>
    </center>
    <top>
