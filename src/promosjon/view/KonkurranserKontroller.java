@@ -27,6 +27,8 @@ public class KonkurranserKontroller {
 	
 	@FXML
 	private void initialize() {
+		Info.konkurranser.add("Gløshaugen rundt");
+		Info.konkurranser.add("Oslo til Trondheim");
 	   	ObservableList<String> konkurranser = FXCollections.observableArrayList();
 	   	for(String element : Info.konkurranser) {
 	   		konkurranser.add(element);
