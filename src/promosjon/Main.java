@@ -7,6 +7,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import model.Info;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
@@ -23,7 +24,7 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
-			
+			Info.brukernavn.add("a"); Info.passord.add("a"); Info.epost.add("a@a.no"); Info.navn.add("Navn Navnesen");
 			visInnlogging();
 			
 		} catch(Exception e) {
