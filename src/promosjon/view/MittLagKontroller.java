@@ -1,6 +1,7 @@
 package promosjon.view;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Optional;
 
 import javafx.collections.FXCollections;
@@ -73,8 +74,17 @@ public class MittLagKontroller {
 	@FXML
 	private void klikkSlettLag() {
 		Info.slettLag();
+		lagSlettet();
 		visHovedmeny();
 	}
+	
+	private void lagSlettet() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+    		alert.setTitle("Slett lag");
+		alert.setHeaderText("");
+		alert.setContentText("Du har nå slettet laget ditt");
+		alert.showAndWait();
+		}
 	
 	@FXML
 	private void klikkHjem() {
