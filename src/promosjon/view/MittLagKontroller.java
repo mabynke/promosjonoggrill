@@ -50,6 +50,7 @@ public class MittLagKontroller {
 			obs.add(medlem);
 		}
 		medlemmer.setItems(obs);
+		// TODO: vise brukerens navn, ikke null
 	}
 	
 	@FXML

@@ -41,12 +41,14 @@ public class NyttLagKontroller {
     		Info.lagListe.add(lagMedlemmer);
     		lagreKlikket = true;
     		stage.close();
+    		// TODO: gå rett til mittLag
     	}
     }
     
     @FXML
     private void klikkAvbryt() {
     	stage.close();
+    	// TODO: fjern hjem-knapp i hjørnet
     }
     
     private boolean gyldigInput() {
