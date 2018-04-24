@@ -55,6 +55,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
+            <!--  
             <Button fx:id="hjemKnapp" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="1">
             		<graphic>
         				<ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
@@ -64,6 +65,7 @@
        				 </ImageView>
       			</graphic>
       		</Button>
+      		-->
          </children>
       </GridPane>
    </top>
