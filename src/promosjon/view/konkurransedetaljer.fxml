@@ -83,11 +83,11 @@
            			<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          		</rowConstraints>
           		<children>
-             		<Button fx:id="statusKnapp" mnemonicParsing="false" text="Meld på">
+             		<Button fx:id="statusKnapp" mnemonicParsing="false" text="Meld på" onAction="#klikkMeldPaaAv">
                      <GridPane.margin>
                         <Insets left="10.0" />
                      </GridPane.margin></Button>
-             		<Button fx:id="tilbakeKnapp" mnemonicParsing="false" text="Tilbake" GridPane.columnIndex="1" >
+             		<Button fx:id="tilbakeKnapp" mnemonicParsing="false" text="Tilbake" GridPane.columnIndex="1" onAction="#klikkTilbake">
              		<GridPane.margin>
                         <Insets right="10.0" />
                      </GridPane.margin></Button>

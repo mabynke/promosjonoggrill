@@ -52,7 +52,7 @@ public class KonkurranseDetaljerKontroller {
 	}
 	
 	@FXML
-	private void klikkMeldPaaAv() { //TODO: denne funker ikke
+	private void klikkMeldPaaAv() {
 		if (statusKnapp.getText().equals("Meld på")) {
 			Info.konkurranse = Info.valgtKonkurranse;
 			statusKnapp.setText("Meld av");
@@ -67,7 +67,7 @@ public class KonkurranseDetaljerKontroller {
 	}
 	
 	@FXML
-	private void klikkTilbake() { //TODO: denne funker ikke
+	private void klikkTilbake() {
 		stage.close();
 	}
 	
