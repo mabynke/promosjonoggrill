@@ -1,11 +1,17 @@
 package promosjon.view;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import model.Info;
+import promosjon.Main;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class NyttLagKontroller {
@@ -40,15 +46,33 @@ public class NyttLagKontroller {
     		lagMedlemmer.add(Info.bruker);
     		Info.lagListe.add(lagMedlemmer);
     		lagreKlikket = true;
-    		stage.close();
-    		// TODO: gå rett til mittLag
+    		visMittLag();
     	}
+    }
+    
+    public void visMittLag() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("view/mittLag.fxml"));
+            BorderPane page = (BorderPane) loader.load();
+            
+            Stage dialogStage = new Stage();
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(stage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+            MittLagKontroller controller = loader.getController();
+            controller.settStage(dialogStage);;
+            dialogStage.showAndWait();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     
     @FXML
     private void klikkAvbryt() {
     	stage.close();
-    	// TODO: fjern hjem-knapp i hjørnet
     }
     
     private boolean gyldigInput() {
