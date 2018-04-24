@@ -1,13 +1,17 @@
 package promosjon.view;
 
 import java.io.IOException;
+import java.util.Optional;
 
 import promosjon.Main;
 import model.Info;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -66,32 +70,46 @@ public class HovedmenyKontroller {
     }
     
     @FXML
-    private void klikkLoggUt() {
+    private void klikkLoggUt() { // TODO: denne funker ikke
         Info.loggUt();
         main.visInnlogging();
     }
     
     public void visKonkurransestatus() {
         try {
-            FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("view/status.fxml"));
-            BorderPane page = (BorderPane) loader.load();
-            
-            Stage dialogStage = new Stage();
-            dialogStage.initModality(Modality.WINDOW_MODAL);
-            dialogStage.initOwner(stage);
-            Scene scene = new Scene(page);
-            dialogStage.setScene(scene);
-            KonkurransestatusKontroller controller = loader.getController();
-            controller.settStage(dialogStage);;
-            dialogStage.showAndWait();
+        		if (Info.konkurranse == null) {
+        			ikkePåmeldt();
+        		}
+        		else {
+	            FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(Main.class.getResource("view/status.fxml"));
+	            BorderPane page = (BorderPane) loader.load();
+	            
+	            Stage dialogStage = new Stage();
+	            dialogStage.initModality(Modality.WINDOW_MODAL);
+	            dialogStage.initOwner(stage);
+	            Scene scene = new Scene(page);
+	            dialogStage.setScene(scene);
+	            KonkurransestatusKontroller controller = loader.getController();
+	            controller.settStage(dialogStage);;
+	            dialogStage.showAndWait();
+        		}
         }
         catch (IOException e) {
             e.printStackTrace();
         }
     }
     
-    public void visKonkurranser() {
+    private void ikkePåmeldt() {
+    	Alert alert = new Alert(AlertType.INFORMATION);
+    		alert.setTitle("Ikke påmeldt konkurranse");
+		alert.setHeaderText("");
+		alert.setContentText("Du er ikke påmeldt en konkurranse");
+		alert.showAndWait();
+		}
+		
+
+	public void visKonkurranser() {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("view/konkurranser.fxml"));
