@@ -45,6 +45,7 @@ public class MittLagKontroller {
 	
 	@FXML
 	private void initialize() {
+		lagnavnLapp.setText(Info.lagNavn.get(Info.lagListe.indexOf(Info.brukersLag())));
 		ObservableList<String> obs = FXCollections.observableArrayList();
 		for (String medlem : Info.brukersLag()) {
 			obs.add(medlem);
