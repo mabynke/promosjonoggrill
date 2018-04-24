@@ -45,6 +45,7 @@ public class EndrePassordKontroller {
 	    		if (result.get() == ButtonType.OK) {
 		    		Info.passord.set(Info.brukernavn.indexOf(Info.bruker), nyttPassordFelt.getText());
 		    		stage.close();
+		    	// TODO: endre epostfeltet på profilen
 	    		}
 	    	}
     }
