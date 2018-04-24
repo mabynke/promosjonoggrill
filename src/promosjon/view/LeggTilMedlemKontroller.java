@@ -1,8 +1,10 @@
 package promosjon.view;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import model.Info;
 
@@ -25,9 +27,22 @@ public class LeggTilMedlemKontroller {
 	
 	@FXML
 	private void klikkLeggTil() {
-		if (gyldigInput()) {
-			Info.brukersLag().add(brukernavnFelt.getText());
-		}		
+		String brukernavn = brukernavnFelt.getText();
+		if (gyldigInput()) {		
+			Info.brukersLag().add(brukernavn);
+			Alert alert = new Alert(AlertType.INFORMATION);
+    			alert.setTitle("Forespørsel sendt");
+    			alert.setHeaderText("");
+    			alert.setContentText("Forespørsel er sendt til " + brukernavn);
+    			alert.showAndWait();
+		}
+		else {
+			Alert alert = new Alert(AlertType.ERROR);
+			alert.setTitle("Fant ikke brukeren");
+			alert.setHeaderText("");
+			alert.setContentText("Fant ingen brukere med brukernavn " + brukernavn);
+			alert.showAndWait();
+		}
 		stage.close();
 	}
 	
