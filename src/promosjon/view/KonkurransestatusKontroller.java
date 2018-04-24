@@ -11,7 +11,7 @@ import model.Info;
 public class KonkurransestatusKontroller {
 	
 	@FXML
-	private ListView<String> informasjon;
+	private ListView<String> informasjon; // TODO: info skal legges i hver sin label, ikke i listview
 	
 	@FXML
 	private Button hjem;
