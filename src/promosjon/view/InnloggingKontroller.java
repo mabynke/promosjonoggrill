@@ -42,6 +42,7 @@ public class InnloggingKontroller {
 	private void klikkLoggInn() {
 		if (gyldigInput()) {
 			loggInnKlikket = true;
+			Info.bruker = brukernavnFelt.getText();
 			if (Info.konkurranse != null) {
 				visKonkurransestatus();
 			}
