@@ -36,12 +36,12 @@
            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="1.0" prefWidth="1.0" />
          </columnConstraints>
          <rowConstraints>
-           <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="52.0" />
-            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="52.0" />
-            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="52.0" />
-            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="52.0" />
-            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" />
+           <RowConstraints maxHeight="-Infinity" minHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="30.0" />
+            <RowConstraints maxHeight="-Infinity" minHeight="30.0" />
+            <RowConstraints maxHeight="-Infinity" minHeight="30.0" />
+            <RowConstraints maxHeight="-Infinity" minHeight="30.0" />
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" valignment="BOTTOM" />
          </rowConstraints>
           <children>
              <TextField fx:id="brukernavnFelt" promptText="Brukernavn" />
@@ -95,8 +95,6 @@
             <Insets left="10.0" />
          </padding>
        </GridPane>
-       
-       
        <!-- 
    		<VBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
