@@ -22,8 +22,8 @@
             <TextField fx:id="brukernavnFelt" prefHeight="27.0" prefWidth="114.0" promptText="Skriv inn brukernavn" />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                <children>
-                  <Button fx:id="leggTilKnapp" onAction="#leggTilTrykket" text="OK" />
-                  <Button fx:id="avbrytKnapp" onAction="#avbrytTrykket" text="Avbryt" />
+                  <Button fx:id="leggTilKnapp" onAction="#klikkLeggTil" text="OK" />
+                  <Button fx:id="avbrytKnapp" onAction="#klikkAvbryt" text="Avbryt" />
                </children>
             </HBox>
          </children>
