@@ -1,6 +1,7 @@
 package promosjon.view;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Optional;
 
 import javafx.collections.FXCollections;
