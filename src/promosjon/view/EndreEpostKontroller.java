@@ -41,6 +41,7 @@ public class EndreEpostKontroller {
 	    		if (result.get() == ButtonType.OK) {
 	        		Info.epost.set(Info.brukernavn.indexOf(Info.bruker), nyEpostFelt.getText());
 	        		stage.close();
+	        	 	// TODO: epostfeltet på profilen må oppdatere seg
 	    		}
 	    	}
     }

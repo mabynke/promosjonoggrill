@@ -11,6 +11,12 @@ import model.Info;
 public class KonkurranseDetaljerKontroller {
 
 	@FXML
+	private Label konkurransenavn;
+	
+	@FXML
+	private Label konkurransetype;
+	
+	@FXML
 	private Label arrangorLapp;
 	
 	@FXML
@@ -33,6 +39,8 @@ public class KonkurranseDetaljerKontroller {
 	
 	@FXML
 	private void initialize() {
+		konkurransenavn.setText(Info.valgtKonkurranse);
+		konkurransetype.setText("individuell");
 		int index = Info.konkurranser.indexOf(Info.valgtKonkurranse);
 		ObservableList<String> obs = FXCollections.observableArrayList();
 		for (String detalj : Info.konkurranseInformasjon.get(index)) {
@@ -44,7 +52,7 @@ public class KonkurranseDetaljerKontroller {
 	}
 	
 	@FXML
-	private void klikkMeldPaaAv() {
+	private void klikkMeldPaaAv() { //TODO: denne funker ikke
 		if (statusKnapp.getText().equals("Meld på")) {
 			Info.konkurranse = Info.valgtKonkurranse;
 			statusKnapp.setText("Meld av");
@@ -59,7 +67,7 @@ public class KonkurranseDetaljerKontroller {
 	}
 	
 	@FXML
-	private void klikkTilbake() {
+	private void klikkTilbake() { //TODO: denne funker ikke
 		stage.close();
 	}
 	

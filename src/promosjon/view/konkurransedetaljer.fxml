@@ -12,7 +12,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" 
+			fx:controller="promosjon.view.KonkurranseDetaljerKontroller">
    <top>
       <GridPane prefHeight="65.0" prefWidth="335.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -41,7 +42,7 @@
          <children>
             <ImageView fitHeight="311.0" fitWidth="335.0" pickOnBounds="true" preserveRatio="true">
             		<image>
-                  	<Image url="@kartmedrute.png" />
+                  	<Image url="@../../resources/kartmedrute.png" />
               	 </image>
             </ImageView>
             <GridPane>
@@ -59,16 +60,16 @@
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin></Label>
-                  <Label fx:id="arrangørnavn" text="Arrangørnavn" GridPane.columnIndex="1" />
+                  <Label fx:id="arrangorLapp" text="Arrangørnavn" GridPane.columnIndex="1" />
                   <Label text="Tid" GridPane.rowIndex="1" />
-                  <Label fx:id="tidspunkt" text="01.04.2018 - 05.05.2018" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="datoLapp" text="01.04.2018 - 05.05.2018" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Label text="Beskrivelse" GridPane.rowIndex="2" />
                </children>
                <VBox.margin>
                   <Insets left="10.0" />
                </VBox.margin>
             </GridPane>
-            <Label fx:id="beskrivelse" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="300.0" text="Beskrivelsetekst">
+            <Label fx:id="beskrivelseLapp" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="300.0" text="Beskrivelsetekst">
                <VBox.margin>
                   <Insets left="10.0" />
                </VBox.margin>
@@ -82,11 +83,11 @@
            			<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          		</rowConstraints>
           		<children>
-             		<Button fx:id="meldPå" mnemonicParsing="false" text="Meld på">
+             		<Button fx:id="statusKnapp" mnemonicParsing="false" text="Meld på">
                      <GridPane.margin>
                         <Insets left="10.0" />
                      </GridPane.margin></Button>
-             		<Button fx:id="tilbake" mnemonicParsing="false" text="Tilbake" GridPane.columnIndex="1" >
+             		<Button fx:id="tilbakeKnapp" mnemonicParsing="false" text="Tilbake" GridPane.columnIndex="1" >
              		<GridPane.margin>
                         <Insets right="10.0" />
                      </GridPane.margin></Button>

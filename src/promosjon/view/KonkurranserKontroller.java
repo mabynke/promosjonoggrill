@@ -1,6 +1,8 @@
 package promosjon.view;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -10,7 +12,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -28,7 +29,11 @@ public class KonkurranserKontroller {
 	@FXML
 	private void initialize() {
 		Info.konkurranser.add("Gløshaugen rundt");
+		ArrayList<String> konkInfo1 = new ArrayList<>(Arrays.asList("NTNU", "25.04.18 - 17.05.18", "bla bla bla..."));
+		Info.konkurranseInformasjon.add(konkInfo1);
 		Info.konkurranser.add("Oslo til Trondheim");
+		ArrayList<String> konkInfo2 = new ArrayList<>(Arrays.asList("Bekk", "26.04.18 - 05.05.18", "bla bla bla..."));
+		Info.konkurranseInformasjon.add(konkInfo2);
 	   	ObservableList<String> konkurranser = FXCollections.observableArrayList();
 	   	for(String element : Info.konkurranser) {
 	   		konkurranser.add(element);
