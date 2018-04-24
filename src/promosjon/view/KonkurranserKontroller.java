@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.Info;
@@ -53,7 +54,7 @@ public class KonkurranserKontroller {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("view/konkurransedetaljer.fxml"));
-            AnchorPane page = (AnchorPane) loader.load();
+            BorderPane page = (BorderPane) loader.load();
             
             Stage dialogStage = new Stage();
             dialogStage.initModality(Modality.WINDOW_MODAL);
