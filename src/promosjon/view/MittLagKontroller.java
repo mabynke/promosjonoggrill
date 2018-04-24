@@ -73,17 +73,20 @@ public class MittLagKontroller {
 	
 	@FXML
 	private void klikkSlettLag() {
-		Info.slettLag();
 		lagSlettet();
-		visHovedmeny();
+		
 	}
 	
 	private void lagSlettet() {
     	Alert alert = new Alert(AlertType.INFORMATION);
     		alert.setTitle("Slett lag");
 		alert.setHeaderText("");
-		alert.setContentText("Du har nå slettet laget ditt");
-		alert.showAndWait();
+		alert.setContentText("Er du sikker på at du vil slette laget?");
+		Optional<ButtonType> result = alert.showAndWait();
+		if (result.get() == ButtonType.OK) {
+			Info.slettLag();
+			visHovedmeny();
+		}
 		}
 	
 	@FXML
