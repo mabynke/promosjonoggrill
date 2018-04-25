@@ -30,6 +30,11 @@ public class InnloggingKontroller {
 	
 	private Stage stage;
 	private boolean loggInnKlikket;
+	private Main main;
+	
+	public void settMain(Main main) {
+		this.main = main;
+	}
 	
 	public void settStage(Stage stage) {
 		this.stage = stage;
@@ -101,7 +106,8 @@ public class InnloggingKontroller {
 			Scene scene = new Scene(page);
 			dialogStage.setScene(scene);
 			HovedmenyKontroller controller = loader.getController();
-			controller.settStage(dialogStage);;
+			controller.setMain(main);
+			controller.settStage(dialogStage);
 			dialogStage.showAndWait();
 		}
 		catch (IOException e) {
@@ -120,7 +126,7 @@ public class InnloggingKontroller {
 			dialogStage.initOwner(stage);
 			Scene scene = new Scene(page);
 			dialogStage.setScene(scene);
-			RegistrerBrukerKontroller controller = loader.getController();
+			KonkurransestatusKontroller controller = loader.getController();
 			controller.settStage(dialogStage);;
 			dialogStage.showAndWait();
 		}
