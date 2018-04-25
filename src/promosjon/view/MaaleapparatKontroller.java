@@ -8,6 +8,8 @@ import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import model.Info;
 
+// TODO: Legge et måleapparat til i listen
+
 public class MaaleapparatKontroller {
 	@FXML
 	private ListView<String> list;

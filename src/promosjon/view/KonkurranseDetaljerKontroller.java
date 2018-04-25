@@ -39,6 +39,8 @@ public class KonkurranseDetaljerKontroller {
 	
 	@FXML
 	private void initialize() {
+		//TODO: Vise riktig «Meld av» eller «Meld på»
+		
 		konkurransenavn.setText(Info.valgtKonkurranse);
 		konkurransetype.setText("individuell");
 		int index = Info.konkurranser.indexOf(Info.valgtKonkurranse);

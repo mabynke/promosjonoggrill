@@ -13,6 +13,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+//TODO: fxml gir ikke automatisk nok plass til navnet
+
 public class MinProfilKontroller {
 
 	@FXML
@@ -63,11 +65,13 @@ public class MinProfilKontroller {
 	
 	@FXML
 	private void klikkEndreNavn() {
+		//TODO: Virker ikke
 		visEndreNavn();
 	}
 	
 	@FXML
 	private void klikkEndreEpost() {
+		//TODO: Endring av epost reflekteres ikke før man går inn i vinduet på nytt
 		visEndreEpost();
 	}
 	
@@ -83,6 +87,7 @@ public class MinProfilKontroller {
 	
 	@FXML
 	private void klikkSlettBruker() {
+		// TODO: Virker ikke
 		Info.slettBruker();
 		main.visInnlogging();
 	}
