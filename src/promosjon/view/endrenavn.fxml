@@ -52,7 +52,6 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" text="Hjem" GridPane.columnIndex="1" />
          </children>
       </GridPane>
    </top>
