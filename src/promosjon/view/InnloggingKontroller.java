@@ -19,7 +19,7 @@ public class InnloggingKontroller {
 	private TextField brukernavnFelt;
 	
 	@FXML
-	private TextField passordFelt;
+	private TextField passordFelt; //TODO: endre til felt som ikke viser hva du skriver?
 	
 	@FXML
 	private Button loggInnKnapp;

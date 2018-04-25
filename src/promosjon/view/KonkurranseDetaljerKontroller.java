@@ -11,6 +11,12 @@ import model.Info;
 public class KonkurranseDetaljerKontroller {
 
 	@FXML
+	private Label konkurransenavn;
+	
+	@FXML
+	private Label konkurransetype;
+	
+	@FXML
 	private Label arrangorLapp;
 	
 	@FXML
@@ -33,6 +39,8 @@ public class KonkurranseDetaljerKontroller {
 	
 	@FXML
 	private void initialize() {
+		konkurransenavn.setText(Info.valgtKonkurranse);
+		konkurransetype.setText("individuell");
 		int index = Info.konkurranser.indexOf(Info.valgtKonkurranse);
 		ObservableList<String> obs = FXCollections.observableArrayList();
 		for (String detalj : Info.konkurranseInformasjon.get(index)) {
