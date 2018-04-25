@@ -21,7 +21,6 @@ import javafx.stage.Stage;
 import model.Info;
 import promosjon.Main;
 
-// TODO: Lage en bruker som de kan legge til på laget sitt
 // TODO: Bruke navn istedenfor brukernavn i listen over deltakere
 
 public class MittLagKontroller {
