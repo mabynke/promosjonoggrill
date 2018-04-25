@@ -160,7 +160,7 @@ public class MinProfilKontroller {
 	public void visMaaleapparater() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("view/mÃ¥leapparat.fxml"));
+			loader.setLocation(Main.class.getResource("view/måleapparat.fxml"));
 			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
