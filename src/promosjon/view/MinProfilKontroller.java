@@ -68,7 +68,6 @@ public class MinProfilKontroller {
 	
 	@FXML
 	private void klikkEndreEpost() {
-		//TODO: Endring av epost reflekteres ikke før man går inn i vinduet på nytt
 		visEndreEpost();
 	}
 	
@@ -157,7 +156,7 @@ public class MinProfilKontroller {
 	public void visMaaleapparater() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("view/m�leapparat.fxml"));
+			loader.setLocation(Main.class.getResource("view/m�leapparat.fxml"));
 			BorderPane page = (BorderPane) loader.load();
 			
 			Stage dialogStage = new Stage();
