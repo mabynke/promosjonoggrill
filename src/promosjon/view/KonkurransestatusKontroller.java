@@ -1,9 +1,12 @@
 package promosjon.view;
 
+import java.util.ArrayList;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import model.Info;
@@ -15,7 +18,19 @@ import model.Info;
 public class KonkurransestatusKontroller {
 	
 	@FXML
-	private ListView<String> informasjon; // TODO: info skal legges i hver sin label, ikke i listview
+	private Label konkurransenavn;
+	
+	@FXML
+	private Label lengde;
+	
+	@FXML
+	private Label tid;
+	
+	@FXML
+	private Label arrangor;
+	
+	@FXML
+	private ListView<String> deltakere;
 	
 	@FXML
 	private Button hjem;
@@ -28,12 +43,17 @@ public class KonkurransestatusKontroller {
 	
 	@FXML
 	private void initialize() {
+		ArrayList<String> detaljer = Info.konkurranseInformasjon.get(Info.konkurranser.indexOf(Info.konkurranse));
+		konkurransenavn.setText(detaljer.get(0));
+		lengde.setText(detaljer.get(1));
+		tid.setText(detaljer.get(2));
+		arrangor.setText(detaljer.get(3));
 		ObservableList<String> obs = FXCollections.observableArrayList();
 		int index = Info.konkurranser.indexOf(Info.konkurranse);
-		for (String element : Info.konkurranseInformasjon.get(index)) {
+		for (String element : Info.brukerePaameldtKonkurranse.get(index)) {
 			obs.add(element);
 		}
-		informasjon.setItems(obs);
+		deltakere.setItems(obs);
 	}
 	
 	@FXML
