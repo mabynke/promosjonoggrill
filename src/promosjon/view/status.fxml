@@ -29,7 +29,7 @@
          <children>
             <ImageView fitHeight="293.0" fitWidth="319.0" pickOnBounds="true" preserveRatio="true">
             		<image>
-                  	<Image url="@../../resources/kartmedrute.png" />
+                  	<Image url="@../../resources/kartmedrute_og_punkter.png" />
               	 </image>
                	<VBox.margin>
                  	 <Insets bottom="5.0" />
