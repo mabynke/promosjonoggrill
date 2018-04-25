@@ -12,6 +12,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
+// TODO: Ikke vise passordet i klartekst
+
 public class EndrePassordKontroller {
 	 	
 	@FXML

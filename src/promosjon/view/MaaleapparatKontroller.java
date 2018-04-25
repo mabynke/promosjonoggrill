@@ -13,6 +13,8 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import model.Info;
 
+// TODO: Legge et måleapparat til i listen
+
 public class MaaleapparatKontroller {
 	@FXML
 	private ListView<String> list;
