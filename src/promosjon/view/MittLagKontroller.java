@@ -40,8 +40,15 @@ public class MittLagKontroller {
 	
 	private Stage stage;
 	
+	private Main main;
+	
 	public void settStage(Stage stage) {
 		this.stage = stage;
+	}
+	
+	public void settMain(Main main) {
+		this.main = main;
+		System.out.println("Satt main: " + main);
 	}
 	
 	@FXML
@@ -128,6 +135,7 @@ public class MittLagKontroller {
 			Scene scene = new Scene(page);
 			dialogStage.setScene(scene);
 			HovedmenyKontroller controller = loader.getController();
+			controller.setMain(main);
 			controller.settStage(dialogStage);;
 			dialogStage.showAndWait();
 		}

@@ -38,6 +38,7 @@ public class HovedmenyKontroller {
     
     public void setMain(Main main) {
         this.main = main;
+        System.out.println("Satt main: " + main);
     }
     
     public void settStage(Stage stage) {
@@ -162,6 +163,7 @@ public class HovedmenyKontroller {
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
             MittLagKontroller controller = loader.getController();
+            controller.settMain(main);
             controller.settStage(dialogStage);;
             dialogStage.showAndWait();
         }
@@ -182,6 +184,7 @@ public class HovedmenyKontroller {
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
             NyttLagKontroller controller = loader.getController();
+            controller.settMain(main);
             controller.settStage(dialogStage);;
             dialogStage.showAndWait();
         }

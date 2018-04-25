@@ -87,6 +87,8 @@ public class MinProfilKontroller {
 		main.visInnlogging();
 	}
 	
+	
+	
 	@FXML
 	private void klikkHjem() {
 		stage.close();

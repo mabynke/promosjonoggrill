@@ -30,6 +30,13 @@ public class NyttLagKontroller {
     private Stage stage;
     private boolean lagreKlikket;
     
+    private Main main;
+    
+    public void settMain(Main main) {
+        this.main = main;
+        System.out.println("Satt main: " + main);
+    }
+    
     public void settStage(Stage stage) {
     	this.stage = stage;
     }
@@ -62,6 +69,7 @@ public class NyttLagKontroller {
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
             MittLagKontroller controller = loader.getController();
+            controller.settMain(main);
             controller.settStage(dialogStage);;
             dialogStage.showAndWait();
         }
