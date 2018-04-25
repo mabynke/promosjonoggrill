@@ -13,8 +13,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-//TODO: fxml gir ikke automatisk nok plass til navnet
-
 public class MinProfilKontroller {
 
 	@FXML

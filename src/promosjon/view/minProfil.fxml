@@ -28,18 +28,18 @@
          <children>
             <HBox prefHeight="36.0" prefWidth="315.0" spacing="10.0">
                <children>
-                  <Label fx:id="navnLapp" prefHeight="27.0" prefWidth="100.0" text="Navn Navnesen " />
+                  <Label fx:id="navnLapp" text="Navn Navnesen " />
                   <Button fx:id="endreNavnKnapp" onAction="#klikkEndreNavn" mnemonicParsing="false" text="Endre" />
                </children>
             </HBox>
             <HBox prefHeight="29.0" prefWidth="315.0" spacing="10.0">
                <children>
-                  <Label fx:id="brukernavnLapp" prefHeight="36.0" prefWidth="110.0" text="Brukernavn" />
+                  <Label fx:id="brukernavnLapp" text="Brukernavn" />
                </children>
             </HBox>
             <HBox prefHeight="40.0" prefWidth="315.0" spacing="10.0">
                <children>
-                  <Label fx:id="epostLapp" prefHeight="27.0" prefWidth="112.0" text="epost@epost.no" />
+                  <Label fx:id="epostLapp" text="epost@epost.no" />
                   <Button fx:id="endreEpostKnapp" onAction="#klikkEndreEpost" mnemonicParsing="false" text="Endre " />
                </children>
             </HBox>
