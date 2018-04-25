@@ -57,16 +57,16 @@ public class KonkurranseDetaljerKontroller {
 	
 	@FXML
 	private void klikkMeldPaaAv() {
-		if (statusKnapp.getText().equals("Meld pÂ")) {
+		if (statusKnapp.getText().equals("Meld p√•")) {
 			Info.konkurranse = Info.valgtKonkurranse;
 			statusKnapp.setText("Meld av");
 		}
 		else if (statusKnapp.getText().equals("Meld av")) {
 			Info.konkurranse = null;
-			statusKnapp.setText("Meld pÂ");
+			statusKnapp.setText("Meld p√•");
 		}
 		else {
-			throw new IllegalStateException("Det stÂr hverken meld p√• eller meld av");
+			throw new IllegalStateException("Det st√•r hverken meld p√• eller meld av");
 		}
 	}
 	
