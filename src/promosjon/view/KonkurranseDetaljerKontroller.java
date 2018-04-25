@@ -57,8 +57,8 @@ public class KonkurranseDetaljerKontroller {
 		}
 		
 		arrangorLapp.setText(obs.get(0));
-		datoLapp.setText(obs.get(1));
-		beskrivelseLapp.setText(obs.get(2));
+		datoLapp.setText(obs.get(2));
+		beskrivelseLapp.setText(obs.get(3));
 	}
 	
 	@FXML
