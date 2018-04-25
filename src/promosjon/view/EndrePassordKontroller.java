@@ -8,11 +8,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
-// TODO: Ikke vise passordet i klartekst
 
 public class EndrePassordKontroller {
 	 	
@@ -20,13 +20,13 @@ public class EndrePassordKontroller {
 	private Button lagreKnapp;
 	
 	@FXML
-	private TextField gammeltPassordFelt;
+	private PasswordField gammeltPassordFelt;
 	
 	@FXML
-	private TextField nyttPassordFelt;
+	private PasswordField nyttPassordFelt;
 	
 	@FXML
-	private TextField gjentaPassordFelt;
+	private PasswordField gjentaPassordFelt;
 	
 	@FXML
 	private Button avbrytKnapp;

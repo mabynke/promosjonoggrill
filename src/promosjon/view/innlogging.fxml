@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.PasswordField?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="promosjon.view.InnloggingKontroller">
@@ -47,7 +48,7 @@
                </VBox.margin>
             </ImageView>
             <TextField fx:id="brukernavnFelt" promptText="Brukernavn" />
-            <TextField fx:id="passordFelt" promptText="Passord" />
+            <PasswordField fx:id="passordFelt" promptText="Passord" />
             <Button fx:id="loggInnKnapp" onAction="#klikkLoggInn" text="Logg inn">
                <VBox.margin>
                   <Insets bottom="20.0" />
