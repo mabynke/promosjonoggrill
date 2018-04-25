@@ -37,8 +37,8 @@ public class EndreNavnKontroller {
     private void klikkLagret()	{
     		if (gyldigInput()) {
 	    		Alert alert = new Alert(AlertType.CONFIRMATION);
-	    		alert.setHeaderText("Endre epost");
-	    		alert.setContentText("Er du sikker på at du vil endre epost?");
+	    		alert.setHeaderText("Endre navn");
+	    		alert.setContentText("Er du sikker på at du vil endre navn?");
 	    		Optional<ButtonType> result = alert.showAndWait();
 	    		if (result.get() == ButtonType.OK) {
 	        		Info.navn.set(Info.brukernavn.indexOf(Info.bruker), nyttNavnFelt.getText());

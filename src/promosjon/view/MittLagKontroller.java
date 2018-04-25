@@ -21,8 +21,6 @@ import javafx.stage.Stage;
 import model.Info;
 import promosjon.Main;
 
-// TODO: Bruke navn istedenfor brukernavn i listen over deltakere
-
 public class MittLagKontroller {
 	
 	@FXML
@@ -50,8 +48,8 @@ public class MittLagKontroller {
 	private void initialize() {
 		lagnavnLapp.setText(Info.lagNavn.get(Info.lagListe.indexOf(Info.brukersLag())));
 		ObservableList<String> obs = FXCollections.observableArrayList();
-		for (String medlem : Info.brukersLag()) {
-			obs.add(medlem);
+		for (String navn : Info.brukersLag()) {
+			obs.add(navn);
 		}
 		medlemmer.setItems(obs);
 	}
@@ -63,7 +61,10 @@ public class MittLagKontroller {
 		alert.setContentText("Er du sikker på at du vil fjerne denne personen?");
 		Optional<ButtonType> result = alert.showAndWait();
 		if (result.get() == ButtonType.OK) {
-			Info.fjernFraLag(medlemmer.getSelectionModel().getSelectedItem());
+			String Navn = medlemmer.getSelectionModel().getSelectedItem();
+			String brukernavn = Info.brukernavn.get(Info.navn.indexOf(Navn));
+			Info.fjernFraLag(brukernavn);
+			// Dette kan (prøve å) fjerne feil bruker dersom flere brukere har samme navn. Det kommer ikke til å bli et problem i denne brukbarhetstesten. 		
 		}
 	}
 	
