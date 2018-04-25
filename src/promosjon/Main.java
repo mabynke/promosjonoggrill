@@ -25,6 +25,7 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			Info.brukernavn.add("a"); Info.passord.add("a"); Info.epost.add("a@a.no"); Info.navn.add("Navn Navnesen");
+			Info.maaleapparater.add("FitBit Charge 2");
 			visInnlogging();
 			
 		} catch(Exception e) {
