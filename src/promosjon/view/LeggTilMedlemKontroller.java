@@ -28,8 +28,9 @@ public class LeggTilMedlemKontroller {
 	@FXML
 	private void klikkLeggTil() {
 		String brukernavn = brukernavnFelt.getText();
-		if (gyldigInput()) {		
-			Info.brukersLag().add(brukernavn);
+		if (gyldigInput()) {
+			String navn = Info.navn.get(Info.brukernavn.indexOf(brukernavn));
+			Info.brukersLag().add(navn);
 			Alert alert = new Alert(AlertType.INFORMATION);
     			alert.setTitle("Forespørsel sendt");
     			alert.setHeaderText("");
