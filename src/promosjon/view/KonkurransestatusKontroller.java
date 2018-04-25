@@ -38,6 +38,7 @@ public class KonkurransestatusKontroller {
 	
 	@FXML
 	private void klikkHjem() {
+		// Denne må passe på å faktisk gå til hovedmenyen. Men det blir ikke aktuelt i testen
 		stage.close();
 	}
 

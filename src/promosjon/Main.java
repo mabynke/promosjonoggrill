@@ -60,7 +60,8 @@ public class Main extends Application {
 			Scene scene = new Scene(page);
 			dialogStage.setScene(scene);
 			InnloggingKontroller controller = loader.getController();
-			controller.settStage(dialogStage);;
+			controller.settMain(this);
+			controller.settStage(dialogStage);
 			dialogStage.showAndWait();
 			return controller.erLoggInnKlikket();
 		}
