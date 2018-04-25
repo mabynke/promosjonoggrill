@@ -11,10 +11,6 @@ import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import model.Info;
 
-// TODO: Passe på at det er en bruker på listen
-// TODO: Passe på at brukeren selv er på listen
-// TODO: Passe på at kartet viser posisjonen til personene på listen
-
 public class KonkurransestatusKontroller {
 	
 	@FXML
