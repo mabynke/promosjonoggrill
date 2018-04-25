@@ -42,6 +42,7 @@ public class Main extends Application {
 			ArrayList<String> konkInfo2 = new ArrayList<>(Arrays.asList("Bekk", "492 km", "25.04.18 - 05.05.18", "bla bla bla..."));
 			Info.konkurranseInformasjon.add(konkInfo2);
 			Info.brukerePaameldtKonkurranse.add(new ArrayList<String>());
+			Info.brukerePaameldtKonkurranse.get(1).add("ola");
 			
 			visInnlogging();
 			
