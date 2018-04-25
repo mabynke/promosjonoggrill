@@ -66,6 +66,8 @@ public class KonkurranseDetaljerKontroller {
 		if (statusKnapp.getText().equals("Meld på")) {
 			Info.konkurranse = Info.valgtKonkurranse;
 			statusKnapp.setText("Meld av");
+			int i = Info.konkurranser.indexOf(Info.valgtKonkurranse);
+			Info.brukerePaameldtKonkurranse.get(i).add(Info.bruker);
 		}
 		else if (statusKnapp.getText().equals("Meld av")) {
 			Info.konkurranse = null;
