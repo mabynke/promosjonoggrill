@@ -34,12 +34,12 @@ public class Main extends Application {
 			
 			Info.maaleapparater.add("Fitbit Charge 2");
 			
-			Info.konkurranser.add("Gløshaugen rundt");
-			ArrayList<String> konkInfo1 = new ArrayList<>(Arrays.asList("NTNU", "4 km", "25.04.18 - 17.05.18", "bla bla bla..."));
+			Info.konkurranser.add("Norgesløpet");
+			ArrayList<String> konkInfo1 = new ArrayList<>(Arrays.asList("NTNU", "524 km", "30.04.18 - 17.05.18", "bla bla bla..."));
 			Info.konkurranseInformasjon.add(konkInfo1);
 			Info.brukerePaameldtKonkurranse.add(new ArrayList<String>());
 			Info.konkurranser.add("Oslo til Trondheim");
-			ArrayList<String> konkInfo2 = new ArrayList<>(Arrays.asList("Bekk", "560 km", "26.04.18 - 05.05.18", "bla bla bla..."));
+			ArrayList<String> konkInfo2 = new ArrayList<>(Arrays.asList("Bekk", "492 km", "25.04.18 - 05.05.18", "bla bla bla..."));
 			Info.konkurranseInformasjon.add(konkInfo2);
 			Info.brukerePaameldtKonkurranse.add(new ArrayList<String>());
 			
