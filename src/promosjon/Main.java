@@ -32,7 +32,7 @@ public class Main extends Application {
 			// Legge til en annen bruker som testeren kan legge til på laget sitt
 			Info.brukernavn.add("ola"); Info.passord.add("ola"); Info.epost.add("ola@nordmann.no"); Info.navn.add("Ola Nordmann");
 			
-			Info.maaleapparater.add("FitBit Charge 2");
+			Info.maaleapparater.add("Fitbit Charge 2");
 			
 			Info.konkurranser.add("Gløshaugen rundt");
 			ArrayList<String> konkInfo1 = new ArrayList<>(Arrays.asList("NTNU", "25.04.18 - 17.05.18", "bla bla bla..."));
