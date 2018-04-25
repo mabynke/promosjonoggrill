@@ -83,7 +83,6 @@ public class MinProfilKontroller {
 	
 	@FXML
 	private void klikkSlettBruker() {
-		// TODO: Virker ikke
 		Info.slettBruker();
 		main.visInnlogging();
 	}
