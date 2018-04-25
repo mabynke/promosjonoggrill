@@ -92,7 +92,7 @@ public class MinProfilKontroller {
 		stage.close();
 	}
 	
-	public void visEndreNavn() {
+	public void visEndreNavn() { //TODO: får ikke åpnet endrenavn (skal kanskje ikke brukes uansett) 
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("view/endrenavn.fxml"));
