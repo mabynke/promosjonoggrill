@@ -70,9 +70,8 @@ public class HovedmenyKontroller {
     }
     
     @FXML
-    private void klikkLoggUt() { // TODO: denne funker ikke (Skal kanskje ikke brukes uansett?)
+    private void klikkLoggUt() {
         Info.loggUt();
-        System.out.println(main); // Debug
         main.visInnlogging();
     }
     
