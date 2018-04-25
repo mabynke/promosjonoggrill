@@ -47,8 +47,11 @@ public class KonkurranseDetaljerKontroller {
 		for (String detalj : Info.konkurranseInformasjon.get(index)) {
 			obs.add(detalj);
 		}
-		if (Info.konkurranse != null) {
+		if (Info.konkurranse == Info.valgtKonkurranse) {
 			statusKnapp.setText("Meld av");
+		}
+		else if (Info.konkurranse != null) {
+			statusKnapp.setVisible(false);
 		}
 		arrangorLapp.setText(obs.get(0));
 		datoLapp.setText(obs.get(1));
