@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
@@ -19,7 +20,7 @@ public class InnloggingKontroller {
 	private TextField brukernavnFelt;
 	
 	@FXML
-	private TextField passordFelt; //TODO: endre til felt som ikke viser hva du skriver?
+	private PasswordField passordFelt;
 	
 	@FXML
 	private Button loggInnKnapp;

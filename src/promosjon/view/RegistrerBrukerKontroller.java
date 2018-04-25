@@ -3,6 +3,7 @@ package promosjon.view;
 import model.Info;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -18,10 +19,10 @@ public class RegistrerBrukerKontroller {
 	private TextField epostFelt;
 	
 	@FXML
-	private TextField passordFelt;
+	private PasswordField passordFelt;
 	
 	@FXML
-	private TextField gjentaPassordFelt;
+	private PasswordField gjentaPassordFelt;
 	
 	@FXML
 	private Button registrerKnapp;

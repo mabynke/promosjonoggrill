@@ -65,7 +65,6 @@ public class MinProfilKontroller {
 	
 	@FXML
 	private void klikkEndreNavn() {
-		//TODO: Virker ikke
 		visEndreNavn();
 	}
 	
