@@ -78,7 +78,7 @@ public class MittLagKontroller {
 	}
 	
 	private void lagSlettet() {
-    	Alert alert = new Alert(AlertType.INFORMATION);
+    	Alert alert = new Alert(AlertType.CONFIRMATION);
     		alert.setTitle("Slett lag");
 		alert.setHeaderText("");
 		alert.setContentText("Er du sikker på at du vil slette laget?");
