@@ -12,6 +12,7 @@ public class Info {
 	public static ArrayList<String> konkurranser = new ArrayList<String>();
 	public static ArrayList<ArrayList<String>> konkurranseInformasjon = new ArrayList<ArrayList<String>>();
 	public static ArrayList<ArrayList<String>> brukerePaameldtKonkurranse = new ArrayList<ArrayList<String>>();
+	public static ArrayList<ArrayList<Double>> kilometerLopt = new ArrayList<ArrayList<Double>>();
 	
 	public static ArrayList<String> maaleapparater = new ArrayList<String>();
 	public static ArrayList<Boolean> tilkobledeMaaleapparater = new ArrayList<Boolean>();

@@ -44,14 +44,20 @@ public class KonkurransestatusKontroller {
 	@FXML
 	private void initialize() {
 		ArrayList<String> detaljer = Info.konkurranseInformasjon.get(Info.konkurranser.indexOf(Info.konkurranse));
-		konkurransenavn.setText(detaljer.get(0));
+		konkurransenavn.setText(Info.konkurranse);
 		lengde.setText(detaljer.get(1));
 		tid.setText(detaljer.get(2));
-		arrangor.setText(detaljer.get(3));
+		arrangor.setText(detaljer.get(0));
 		ObservableList<String> obs = FXCollections.observableArrayList();
 		int index = Info.konkurranser.indexOf(Info.konkurranse);
 		for (String element : Info.brukerePaameldtKonkurranse.get(index)) {
-			obs.add(element);
+			if (element.equals(Info.bruker)) {
+				obs.add(element + "  -  62.3 km");
+			}
+			else {
+				obs.add(element + "  -  253.7 km");
+			}
+			
 		}
 		deltakere.setItems(obs);
 	}
