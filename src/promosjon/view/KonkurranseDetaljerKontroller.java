@@ -39,7 +39,6 @@ public class KonkurranseDetaljerKontroller {
 	
 	@FXML
 	private void initialize() {
-		//TODO: Vise riktig «Meld av» eller «Meld på»
 		
 		konkurransenavn.setText(Info.valgtKonkurranse);
 		konkurransetype.setText("individuell");
@@ -47,6 +46,9 @@ public class KonkurranseDetaljerKontroller {
 		ObservableList<String> obs = FXCollections.observableArrayList();
 		for (String detalj : Info.konkurranseInformasjon.get(index)) {
 			obs.add(detalj);
+		}
+		if (Info.konkurranse != null) {
+			statusKnapp.setText("Meld av");
 		}
 		arrangorLapp.setText(obs.get(0));
 		datoLapp.setText(obs.get(1));
