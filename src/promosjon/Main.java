@@ -1,6 +1,8 @@
 package promosjon;
 	
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import promosjon.view.InnloggingKontroller;
 import javafx.application.Application;
@@ -26,6 +28,12 @@ public class Main extends Application {
 			primaryStage.show();
 			Info.brukernavn.add("a"); Info.passord.add("a"); Info.epost.add("a@a.no"); Info.navn.add("Navn Navnesen");
 			Info.maaleapparater.add("FitBit Charge 2");
+			Info.konkurranser.add("Gløshaugen rundt");
+			ArrayList<String> konkInfo1 = new ArrayList<>(Arrays.asList("NTNU", "25.04.18 - 17.05.18", "bla bla bla..."));
+			Info.konkurranseInformasjon.add(konkInfo1);
+			Info.konkurranser.add("Oslo til Trondheim");
+			ArrayList<String> konkInfo2 = new ArrayList<>(Arrays.asList("Bekk", "26.04.18 - 05.05.18", "bla bla bla..."));
+			Info.konkurranseInformasjon.add(konkInfo2);
 			visInnlogging();
 			
 		} catch(Exception e) {
