@@ -47,7 +47,7 @@ public class MaaleapparatKontroller {
     @FXML
     private void klikkKobleTil()	{
 	    	String valgtApparat = list.getSelectionModel().getSelectedItem();
-	    	Info.tilkobledeMaaleapparater.set(Info.maaleapparater.indexOf(valgtApparat), true);
+	    	Info.tilkobledeMaaleapparater.add(Info.maaleapparater.indexOf(valgtApparat), true);
 	    	kobleTilKlikket = true;
 	    	kobletTil();
 	    	stage.close();
