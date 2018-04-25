@@ -54,7 +54,9 @@ public class Info {
 	}
 	
 	public static void fjernFraLag() {
-		brukersLag().remove(bruker);
+		if (brukersLag() != null) {
+			brukersLag().remove(bruker);
+		}
 	}
 	
 	public static void loggUt() {

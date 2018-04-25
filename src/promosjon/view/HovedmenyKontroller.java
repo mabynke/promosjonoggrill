@@ -141,6 +141,7 @@ public class HovedmenyKontroller {
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
             MinProfilKontroller controller = loader.getController();
+            controller.settMain(main);
             controller.settStage(dialogStage);;
             dialogStage.showAndWait();
         }
