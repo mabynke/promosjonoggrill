@@ -1,10 +1,15 @@
 package promosjon.view;
 
+import java.util.Optional;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import model.Info;
 
@@ -68,14 +73,36 @@ public class KonkurranseDetaljerKontroller {
 			statusKnapp.setText("Meld av");
 			int i = Info.konkurranser.indexOf(Info.valgtKonkurranse);
 			Info.brukerePaameldtKonkurranse.get(i).add(Info.bruker);
+			meldtPaa();
 		}
 		else if (statusKnapp.getText().equals("Meld av")) {
-			Info.konkurranse = null;
-			statusKnapp.setText("Meld på");
+			//Info.konkurranse = null;
+			//statusKnapp.setText("Meld på");
+			meldeAv();
 		}
 		else {
 			throw new IllegalStateException("Det står hverken meld på eller meld av");
 		}
+	}
+	
+	private void meldeAv() {
+		Alert alert = new Alert(AlertType.CONFIRMATION);
+		alert.setTitle("Melde av");
+	alert.setHeaderText("");
+	alert.setContentText("Er du sikker på at du vil melde deg av konkurransen?");
+	Optional<ButtonType> result = alert.showAndWait();
+	if (result.get() == ButtonType.OK) {
+		Info.konkurranse = null;
+		statusKnapp.setText("Meld på");
+	}
+	}
+	
+	private void meldtPaa() {
+		Alert alert = new Alert(AlertType.INFORMATION);
+    		alert.setTitle("Meldt på");
+		alert.setHeaderText("");
+		alert.setContentText("Du er nå meldt på konkurransen " + Info.valgtKonkurranse);
+		alert.showAndWait();
 	}
 	
 	@FXML
