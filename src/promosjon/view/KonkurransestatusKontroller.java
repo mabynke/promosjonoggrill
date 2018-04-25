@@ -52,10 +52,10 @@ public class KonkurransestatusKontroller {
 		int index = Info.konkurranser.indexOf(Info.konkurranse);
 		for (String element : Info.brukerePaameldtKonkurranse.get(index)) {
 			if (element.equals(Info.bruker)) {
-				obs.add(element + "  -  62.3 km");
+				obs.add(element + "  -  109.2 km");
 			}
 			else {
-				obs.add(element + "  -  253.7 km");
+				obs.add(element + "  -  237.7 km");
 			}
 			
 		}
